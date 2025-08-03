@@ -26,7 +26,7 @@ const handleSignup = (e) => {
   console.log('✅ handleSignup called');
   console.log('📦 Registration Data:', regData);
 
-  axios.post('http://localhost:3000/', regData)
+  axios.post('http://localhost:3000//api/register', regData)
     .then((response) => {
       console.log('✅ Registration successful:', response.data);
     })
